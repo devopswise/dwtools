@@ -17,7 +17,7 @@ node('jenkins-python-slave') {
                                    -e KEY_PAIR=dwtools \
                                    -e PEM_FILE=/opt/dwtools/dwtools.pem \
                                    -e DEBUG="-vv" \
-                                   -v /opt/dwtools:/opt/dwtools \
+                                   -v /opt/source/dwtools:/opt/dwtools \
                                    devopswise/dwtools-installer:latest "dwtools --launch" '''
                 }
            }
